@@ -19,7 +19,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     max-width: 940px;
     color: #fff;
-    font-family: 'shadows into light', sans-serif;
+    font-family: 'Lexend', sans-serif;
     @include medium-screen {
         grid-template-columns: repeat(2, 1fr);
         box-sizing: border-box;
@@ -34,7 +34,8 @@ body {
         padding: 40px;
         h1 {
             margin-bottom: .95rem;
-            font-weight: 600;
+            font-family: 'Big Shoulders Display', sans-serif;
+            font-weight: 700;
         }
         p{
             margin-bottom: 6em;
