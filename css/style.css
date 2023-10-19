@@ -5,8 +5,9 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   font-size: 15px;
 }
 
@@ -33,6 +34,7 @@ body {
 }
 .container #box {
   padding: 40px;
+  line-height: 2;
 }
 .container #box h1 {
   margin-bottom: 0.95rem;
@@ -41,7 +43,7 @@ body {
 }
 .container #box p {
   margin-bottom: 6em;
-  line-height: 1.2;
+  line-height: 1.8;
 }
 .container #box #l-m {
   margin: 20px 0 60px 0;
