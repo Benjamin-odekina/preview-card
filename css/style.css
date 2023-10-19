@@ -1,0 +1,114 @@
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 940px;
+  color: #fff;
+  font-family: "shadows into light", sans-serif;
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+  }
+  .container .box-3 {
+    grid-column: span 3;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    display: block;
+  }
+}
+.container #box {
+  padding: 40px;
+}
+.container #box h1 {
+  margin-bottom: 0.95rem;
+  font-weight: 600;
+}
+.container #box p {
+  margin-bottom: 6em;
+  line-height: 1.2;
+}
+.container #box #l-m {
+  margin: 20px 0 60px 0;
+}
+@media only screen and (max-width: 480px) {
+  .container #box #l-m {
+    /*padding: 10px 5px;*/
+  }
+}
+.container #box #l-m a {
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+.container #box #l-m a:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.container #box img {
+  transform: scale(0.7);
+  margin-bottom: 0.5rem;
+}
+.container #box:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+@media only screen and (max-width: 700px) {
+  .container #box:nth-child(1) {
+    border-radius: 10px 0 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container #box:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+}
+.container #box:nth-child(1) a {
+  color: hsl(31, 77%, 52%);
+}
+.container #box:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+@media only screen and (max-width: 700px) {
+  .container #box:nth-child(2) {
+    border-radius: 0 10px 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container #box:nth-child(2) {
+    border-radius: 0;
+  }
+}
+.container #box:nth-child(2) a {
+  color: hsl(184, 100%, 22%);
+}
+.container #box:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+@media only screen and (max-width: 700px) {
+  .container #box:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.container #box:nth-child(3) a {
+  color: hsl(179, 100%, 13%);
+}/*# sourceMappingURL=style.css.map */

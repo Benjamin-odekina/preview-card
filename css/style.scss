@@ -1,0 +1,103 @@
+$Brightorange: hsl(31, 77%, 52%);
+$Darkcyan: hsl(184, 100%, 22%);
+$Verydarkcyan: hsl(179, 100%, 13%);
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+@import 'mixins';
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 940px;
+    color: #fff;
+    font-family: 'shadows into light', sans-serif;
+    @include medium-screen {
+        grid-template-columns: repeat(2, 1fr);
+        box-sizing: border-box;
+        .box-3 {
+            grid-column: span 3;
+        }
+    }
+    @include small-screen {
+        display: block;
+    }
+    #box {
+        padding: 40px;
+        h1 {
+            margin-bottom: .95rem;
+            font-weight: 600;
+        }
+        p{
+            margin-bottom: 6em;
+            line-height: 1.2;
+        }
+       #l-m  {
+        margin: 20px 0 60px 0;
+        @include small-screen{
+            /*padding: 10px 5px;*/
+        }
+            a {
+            background-color: #fff;
+            padding: 10px 30px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            text-decoration: none;
+            transition:all .1s ease-in-out;
+            }
+           
+        }
+        #l-m a:hover {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+    #box img {
+        transform: scale(.7);
+        margin-bottom: .5rem;
+    }
+    #box:nth-child(1) {
+        background-color: $Brightorange;
+        border-radius: 10px 0 0 10px;
+        @include medium-screen {
+            border-radius: 10px 0 0 0;
+        }
+        @include small-screen {
+            border-radius: 10px 10px 0 0;
+        }
+        a {
+            color: $Brightorange;
+        }
+    }
+    #box:nth-child(2) {
+        background-color: $Darkcyan;
+        @include medium-screen {
+            border-radius: 0 10px 0 0;
+        }
+        @include small-screen {
+            border-radius: 0;
+        }
+        a {
+            color: $Darkcyan;
+        }
+    }
+    #box:nth-child(3) {
+        background-color: $Verydarkcyan;
+        border-radius: 0 10px 10px 0;
+        @include medium-screen {
+            border-radius: 0 0 10px 10px;
+        }
+        a {
+            color: $Verydarkcyan;
+        }
+    }
+}
